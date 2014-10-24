@@ -1,0 +1,15 @@
+.channels td,
+.channels th {
+	border: 1px solid grey;
+	border-spacing: 0;
+	padding: 5px;
+}
+
+.channels th {
+	font-weight: bold;
+}
+
+.youtube_settings li {
+	float: left;
+	margin-right: 10px;
+}

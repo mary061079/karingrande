@@ -85,7 +85,7 @@ function radiate_scripts() {
 	// Load our main stylesheet.
 	
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/bootstrap-css/bootstrap.css' );     
-  wp_enqueue_style( 'radiate-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'radiate-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap-theme', get_template_directory_uri() . '/bootstrap-css/bootstrap-theme.css' );
 
 	wp_enqueue_style( 'radiate-google-fonts', '//fonts.googleapis.com/css?family=Roboto|Merriweather:400,300' ); 
@@ -120,6 +120,7 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/empty-thumbnails.php';
 include( get_template_directory(). '/inc/share-buttons/Social_Buttons/Core.php');
 require get_template_directory() . '/inc/share-buttons/share-buttons.php';
+require get_template_directory() . '/inc/youtube/init.php';
 
 //foreach (glob( get_template_directory(). '/inc/share-buttons/Social_Buttons/Services/*.php' ) as $filename) {
 //    include $filename;
