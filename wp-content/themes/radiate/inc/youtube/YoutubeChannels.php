@@ -114,7 +114,7 @@ class YoutubeChannels {
 				}
 				$channel = json_decode( $channel_info['body'] );
 				$playlistID = $channel->items[0]->contentDetails->relatedPlaylists->uploads;
-				$vurl = $gapi_url . 'playlistItems?part=snippet&maxResults=10&playlistId=' . $playlistID . '&key=' . $youtube_api_key;
+				$vurl = $gapi_url . 'playlistItems?part=snippet&maxResults=1&playlistId=' . $playlistID . '&key=' . $youtube_api_key;
 				$videos = wp_remote_get( $vurl );
 
 				if ( is_wp_error( $videos ) ) {
@@ -149,6 +149,8 @@ class YoutubeChannels {
 					update_post_meta( $post_id, '_yoast_wpseo_title', $video->snippet->title );
 					update_post_meta( $post_id, '_yoast_wpseo_metadesc', $video->snippet->title );
 					$saved_videos[] = $video->snippet->resourceId->videoId;
+
+					self::get_youtube_image( $video->snippet->resourceId->videoId, $post_id );
 					$i++;
 				}
 
@@ -163,6 +165,17 @@ class YoutubeChannels {
 				exit;
 			}
 		}
+	}
+
+	function get_youtube_image( $video_id, $post_id ) {
+		$image_url = 'http://img.youtube.com/vi/' . $video_id . '/0.jpg';
+		$image = wp_get_image_editor( $image_url );
+		if ( ! is_wp_error( $image ) ) {
+			$image->rotate( 90 );
+			$image->resize( 300, 300, true );
+			$image->save( 'new_image.jpg' );
+		}
+		update_post_meta( $post_id, '_thumbnail_id', $image_id);
 	}
 }
 
