@@ -1,0 +1,37 @@
+.atf-share-button .facebook, .atf-share-button .facebook:hover {
+  border-color: #d2d9e8;
+  color: #3a579a;
+  padding: 3px 0 0;
+  width: 100%;
+  text-indent: 20px;
+  height: 23px;
+  font-size: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(top, #fafbfd 4%, #ebf0f7 52%, #eaeef6 76%, #e5ebf4 88%, #e3e9f3 94%);
+  background-image: -o-linear-gradient(top, #fafbfd 4%, #ebf0f7 52%, #eaeef6 76%, #e5ebf4 88%, #e3e9f3 94%);
+  background-image: -moz-linear-gradient(top, #fafbfd 4%, #ebf0f7 52%, #eaeef6 76%, #e5ebf4 88%, #e3e9f3 94%);
+  background-image: -webkit-linear-gradient(top, #fafbfd 4%, #ebf0f7 52%, #eaeef6 76%, #e5ebf4 88%, #e3e9f3 94%);
+  background-image: -ms-linear-gradient(top, #fafbfd 4%, #ebf0f7 52%, #eaeef6 76%, #e5ebf4 88%, #e3e9f3 94%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.04, #fafbfd), color-stop(0.52, #ebf0f7), color-stop(0.76, #eaeef6), color-stop(0.88, #e5ebf4), color-stop(0.94, #e3e9f3));
+  background-color: #e7ecf5;
+}
+
+.atf-share-button.size-icon .facebook {
+  padding-left: 0;
+}
+
+.atf-share-button .facebook:after {
+  width: 13px;
+  height: 13px;
+}
+.atf-share-button .facebook.facebook-share:after{
+	display: block;
+	content:"";
+	background-position: -32px 0;
+	width:14px;
+	height:14px;
+	position:absolute;
+	left:4px;
+	top:3px;
+}
+

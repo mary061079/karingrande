@@ -1,0 +1,24 @@
+.atf-share-button .twitter:after {
+  background-position: -16px 0;
+  width: 15px;
+  height: 12px;
+}
+
+.atf-share-button .twitter, .atf-share-button .twitter:hover {
+  border-color: #d1d1d1;
+  color: #414141;
+  padding: 3px 0 0;
+  width: 100%;
+  text-indent: 20px;
+  height: 23px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: -5px;
+  background-image: linear-gradient(top, #fefefe 26%, #fafafa 63%, #f4f4f4 82%, #f1f1f1 91%, #ececec 96%);
+  background-image: -o-linear-gradient(top, #fefefe 26%, #fafafa 63%, #f4f4f4 82%, #f1f1f1 91%, #ececec 96%);
+  background-image: -moz-linear-gradient(top, #fefefe 26%, #fafafa 63%, #f4f4f4 82%, #f1f1f1 91%, #ececec 96%);
+  background-image: -webkit-linear-gradient(top, #fefefe 26%, #fafafa 63%, #f4f4f4 82%, #f1f1f1 91%, #ececec 96%);
+  background-image: -ms-linear-gradient(top, #fefefe 26%, #fafafa 63%, #f4f4f4 82%, #f1f1f1 91%, #ececec 96%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.26, #fefefe), color-stop(0.63, #fafafa), color-stop(0.82, #f4f4f4), color-stop(0.91, #f1f1f1), color-stop(0.96, #ececec));
+  background-color: #fbfbfb;
+}

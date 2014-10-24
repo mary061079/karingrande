@@ -1,0 +1,47 @@
+.atf-share-button .google:after{
+	display: block;
+	content:"";
+	background-position: -112px 0;
+	width:32px;
+	height:17px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.atf-share-button.size-icon .google:after{
+	display: block;
+	content:"";
+	background-position: -147px 0;
+	width:19px;
+	height:17px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.atf-share-button .google, .atf-share-button .google:hover{
+    border-color:#d1d1d1;
+    color:#414141;
+    padding: 3px 0 0;
+    width: 100%;
+    text-indent: 20px;
+    height:23px;
+    font-size:10px;
+    font-weight: bold;
+    background-image: linear-gradient(top, rgb(254,254,254) 26%, rgb(250,250,250) 63%, rgb(244,244,244) 82%, rgb(241,241,241) 91%, rgb(236,236,236) 96%);
+	background-image: -o-linear-gradient(top, rgb(254,254,254) 26%, rgb(250,250,250) 63%, rgb(244,244,244) 82%, rgb(241,241,241) 91%, rgb(236,236,236) 96%);
+	background-image: -moz-linear-gradient(top, rgb(254,254,254) 26%, rgb(250,250,250) 63%, rgb(244,244,244) 82%, rgb(241,241,241) 91%, rgb(236,236,236) 96%);
+	background-image: -webkit-linear-gradient(top, rgb(254,254,254) 26%, rgb(250,250,250) 63%, rgb(244,244,244) 82%, rgb(241,241,241) 91%, rgb(236,236,236) 96%);
+	background-image: -ms-linear-gradient(top, rgb(254,254,254) 26%, rgb(250,250,250) 63%, rgb(244,244,244) 82%, rgb(241,241,241) 91%, rgb(236,236,236) 96%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.26, rgb(254,254,254)),
+		color-stop(0.63, rgb(250,250,250)),
+		color-stop(0.82, rgb(244,244,244)),
+		color-stop(0.91, rgb(241,241,241)),
+		color-stop(0.96, rgb(236,236,236))
+	);
+    background-color: #ededed;
+}
